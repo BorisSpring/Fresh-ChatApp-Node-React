@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  outline: none;
+  @apply transition-all duration-500;
+}
+
+/* utilities classes */
+.left-container {
+  @apply pt-4 bg-gray-50  h-full flex flex-col gap-3 md:gap-5 w-full  lg:max-w-[390px];
+}
+
+.main-btn {
+  @apply w-full rounded-md dark:hover:bg-gray-800 dark:shadow-gray-700  dark:text-[#abb4d2] bg-purple hover:bg-white hover:text-purple  transition-all duration-500 hover:shadow-sm hover:shadow-purple text-white font-semibold text-lg md:text-xl py-1 mt-3 hover:-translate-y-1;
+}
+
+.main-link {
+  @apply font-semibold text-base hover:underline transition-all duration-500;
+}
+/* utilities classes end */
+
+/* global.css */
+:root {
+  --scrollbar-track-color: white;
+  --scrollbar-thumb-color: #7269ef;
+}
+
+.dark {
+  --scrollbar-track-color: black;
+  --scrollbar-thumb-color: #7269ef; /* Promenite ako želite drugačiju boju za dark mode */
+}
+
+/* styling for browser toolbar  */
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  /* background-color: var(--scrollbar-thumb-color); */
+  height: 4px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background-color: #7269ef; */
+  background-color: var(--scrollbar-thumb-color);
+
+  width: 5px;
+}
+/* styling for browser toolbar end */
+
+/* swiper css */
+swiper-slide {
+  width: 71px !important;
+  margin: 0 10px 0 0;
+  overflow: visible !important;
+  padding-top: 15px;
+}
+
+swiper-container {
+  overflow: visible !important;
+}
+.swiper-container {
+  overflow: visible !important;
+}
+/* swiper css end */
+
+/* cli path for chat messages */
+.clip-path-first {
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.clip-path-second {
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+/* cli path for chat messages end */
